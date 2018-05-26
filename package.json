@@ -1,20 +1,23 @@
 {
   "name": "kebabcase.io",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && gulp && webpack -p --progress --hide-modules",
-    "dev": "yarn build && webpack-dev-server --inline --hot --env.dev --content-base dist/",
+    "dev": "yarn build && webpack-dev-server --inline --hot --env.dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "commonmark": "^0.28.1",
     "element-ui": "^2.3.7",
     "es6-promise": "^4.2.4",
     "lodash": "^4.17.10",
     "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@types/commonmark": "^0.27.0",
     "@types/lodash": "^4.14.108",
     "autoprefixer": "^6.6.0",
     "babel-core": "^6.26.3",
